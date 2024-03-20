@@ -1,6 +1,7 @@
 import './App.css';
 
 import Expenses from './Component/Expense/Expenses';
+import NewExpense from './Component/NewExpense/NewExpense';
 import Card from './Component/UI/Card';
 
 function App() {
@@ -28,8 +29,10 @@ function App() {
   
   return (
     <Card>
+      <NewExpense/>
       <Expenses items={expenses}/>
-    </Card>
+
+  </Card>
   );
 }
 
