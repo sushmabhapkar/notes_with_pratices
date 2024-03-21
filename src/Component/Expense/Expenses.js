@@ -4,6 +4,7 @@ import './Expenses.css';
 import Card from "../UI/Card";
 import ExpenseFilter from "./ExpenseFilter";
 import ExpenseList from "./ExpenseList";
+import ExpensesChart from "./ExpenseCart";
 
 function Expenses(props)
 {
@@ -24,6 +25,7 @@ return(
           onChangeFilter={filterChangeHandler}
       />
      
+     <ExpensesChart expenses={FilteredExpenses}/>
     <ExpenseList items={FilteredExpenses}/>
      </Card>
 );
